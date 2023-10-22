@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+     <nav class="nav">
+     <a href="#" class="nav__a">Adventure</a>
+     <div class="nav__links">
+         <ul class="nav__ul">
+             <li class="nav__li"><a class="nav_li nav_li--active" href="#">Home</a></li>
+             <li class="nav__li"><a class="nav_li nav_li--a" href="#">Adventures</a></li>
+             <li class="nav__li"><a class="nav_li nav_li--a" href="#">Support</a></li>
+             <li class="nav__li"><a class="nav_li nav_li--a" href="#">Infos</a></li>
+             <li class="nav__li"><a class="nav_li nav_li--a" href="#">Contact</a></li>
+
+         </ul>
+     </div>
+         <img class="nav__hambur" src="gratis-png-boton-de-hamburguesa-barra-de-menu-iconos-de-computadora-linea-horizontal.png" alt="">
+     </nav>
+     <header class="header">
+    </header>
+
+</body>
+<script>
+    const mehambur= document.querySelector(".nav__hambur")
+    const navlinks =document.querySelector(".nav__links")
+
+    mehambur.addEventListener('click',()=>{navlinks.classList.toggle('mobile-menu')})
+</script>
+</html>
